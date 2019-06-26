@@ -1,6 +1,6 @@
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
     @available(iOS, introduced: 7.0, deprecated: 11.0, message: "Use adjustsScrollViewInsets(_ scrollView: UIScrollView, adjust: Bool) instead")
     public func adjustsScrollViewInsets(_ adjust: Bool) {
         if adjust == false {
