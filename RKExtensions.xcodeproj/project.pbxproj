@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BBFDA37322C40FB700C75443 /* RKExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFDA36922C40FB700C75443 /* RKExtensions.framework */; };
-		BBFDA37822C40FB700C75443 /* RKExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA37722C40FB700C75443 /* RKExtensionsTests.swift */; };
 		BBFDA37A22C40FB700C75443 /* RKExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = BBFDA36C22C40FB700C75443 /* RKExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBFDA38422C4114100C75443 /* StringRegExpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA38322C4114100C75443 /* StringRegExpTests.swift */; };
+		BBFDA38A22C411A000C75443 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA38622C411A000C75443 /* Codable.swift */; };
+		BBFDA38B22C411A000C75443 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA38722C411A000C75443 /* Date.swift */; };
+		BBFDA38C22C411A000C75443 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA38822C411A000C75443 /* TimeInterval.swift */; };
+		BBFDA38D22C411A000C75443 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA38922C411A000C75443 /* String.swift */; };
+		BBFDA39E22C415A900C75443 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39122C415A800C75443 /* UIImage.swift */; };
+		BBFDA39F22C415A900C75443 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39222C415A800C75443 /* UIApplication.swift */; };
+		BBFDA3A022C415A900C75443 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39322C415A800C75443 /* UIColor.swift */; };
+		BBFDA3A322C415A900C75443 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39622C415A800C75443 /* UIButton.swift */; };
+		BBFDA3A422C415A900C75443 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39722C415A800C75443 /* UIViewController.swift */; };
+		BBFDA3A622C415A900C75443 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39922C415A800C75443 /* CALayer.swift */; };
+		BBFDA3A722C415A900C75443 /* UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39A22C415A800C75443 /* UINavigationItem.swift */; };
+		BBFDA3A922C415A900C75443 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDA39C22C415A900C75443 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +39,20 @@
 		BBFDA36C22C40FB700C75443 /* RKExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKExtensions.h; sourceTree = "<group>"; };
 		BBFDA36D22C40FB700C75443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBFDA37222C40FB700C75443 /* RKExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBFDA37722C40FB700C75443 /* RKExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKExtensionsTests.swift; sourceTree = "<group>"; };
 		BBFDA37922C40FB700C75443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFDA38322C4114100C75443 /* StringRegExpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRegExpTests.swift; sourceTree = "<group>"; };
+		BBFDA38622C411A000C75443 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		BBFDA38722C411A000C75443 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		BBFDA38822C411A000C75443 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		BBFDA38922C411A000C75443 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BBFDA39122C415A800C75443 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		BBFDA39222C415A800C75443 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		BBFDA39322C415A800C75443 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BBFDA39622C415A800C75443 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BBFDA39722C415A800C75443 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		BBFDA39922C415A800C75443 /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		BBFDA39A22C415A800C75443 /* UINavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItem.swift; sourceTree = "<group>"; };
+		BBFDA39C22C415A900C75443 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,7 @@
 		BBFDA36B22C40FB700C75443 /* RKExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				BBFDA38522C4115900C75443 /* sources */,
 				BBFDA36C22C40FB700C75443 /* RKExtensions.h */,
 				BBFDA36D22C40FB700C75443 /* Info.plist */,
 			);
@@ -80,10 +105,45 @@
 		BBFDA37622C40FB700C75443 /* RKExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBFDA37722C40FB700C75443 /* RKExtensionsTests.swift */,
+				BBFDA38322C4114100C75443 /* StringRegExpTests.swift */,
 				BBFDA37922C40FB700C75443 /* Info.plist */,
 			);
 			path = RKExtensionsTests;
+			sourceTree = "<group>";
+		};
+		BBFDA38522C4115900C75443 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDA38F22C4159C00C75443 /* UIKit */,
+				BBFDA38E22C411A600C75443 /* Foundation */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		BBFDA38E22C411A600C75443 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDA38622C411A000C75443 /* Codable.swift */,
+				BBFDA38722C411A000C75443 /* Date.swift */,
+				BBFDA38922C411A000C75443 /* String.swift */,
+				BBFDA38822C411A000C75443 /* TimeInterval.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		BBFDA38F22C4159C00C75443 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDA39922C415A800C75443 /* CALayer.swift */,
+				BBFDA39222C415A800C75443 /* UIApplication.swift */,
+				BBFDA39622C415A800C75443 /* UIButton.swift */,
+				BBFDA39322C415A800C75443 /* UIColor.swift */,
+				BBFDA39122C415A800C75443 /* UIImage.swift */,
+				BBFDA39A22C415A800C75443 /* UINavigationItem.swift */,
+				BBFDA39C22C415A900C75443 /* UIView.swift */,
+				BBFDA39722C415A800C75443 /* UIViewController.swift */,
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +208,11 @@
 				TargetAttributes = {
 					BBFDA36822C40FB700C75443 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					BBFDA37122C40FB700C75443 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -194,6 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFDA38A22C411A000C75443 /* Codable.swift in Sources */,
+				BBFDA39F22C415A900C75443 /* UIApplication.swift in Sources */,
+				BBFDA3A422C415A900C75443 /* UIViewController.swift in Sources */,
+				BBFDA3A622C415A900C75443 /* CALayer.swift in Sources */,
+				BBFDA38C22C411A000C75443 /* TimeInterval.swift in Sources */,
+				BBFDA3A322C415A900C75443 /* UIButton.swift in Sources */,
+				BBFDA3A722C415A900C75443 /* UINavigationItem.swift in Sources */,
+				BBFDA38D22C411A000C75443 /* String.swift in Sources */,
+				BBFDA39E22C415A900C75443 /* UIImage.swift in Sources */,
+				BBFDA3A922C415A900C75443 /* UIView.swift in Sources */,
+				BBFDA3A022C415A900C75443 /* UIColor.swift in Sources */,
+				BBFDA38B22C411A000C75443 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBFDA37822C40FB700C75443 /* RKExtensionsTests.swift in Sources */,
+				BBFDA38422C4114100C75443 /* StringRegExpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +415,7 @@
 		BBFDA37E22C40FB700C75443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +442,7 @@
 		BBFDA37F22C40FB700C75443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +468,8 @@
 		BBFDA38122C40FB700C75443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8D6V35K4C;
 				INFOPLIST_FILE = RKExtensionsTests/Info.plist;
@@ -401,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKExtensionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +489,8 @@
 		BBFDA38222C40FB700C75443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8D6V35K4C;
 				INFOPLIST_FILE = RKExtensionsTests/Info.plist;
