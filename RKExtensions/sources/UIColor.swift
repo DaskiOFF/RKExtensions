@@ -1,5 +1,6 @@
 import UIKit
 
+// MARK: - Convenience inits
 extension UIColor {
     // MARK: - From Int
     /// Получить цвет согласно RGB (значения от 0 до 255), alpha от 0 до 1
@@ -114,5 +115,12 @@ extension UIColor {
         let b = CGFloat((int & 0xFF) >> 0) / 255.0
         
         return UIColor(red: r, green: g, blue: b, alpha: a)
+    }
+}
+
+// MARK: - Alpha
+extension UIColor {
+    public func alpha(to alpha: CGFloat) -> UIColor {
+        return self.withAlphaComponent(alpha)
     }
 }
