@@ -116,6 +116,38 @@ extension UIColor {
         
         return UIColor(red: r, green: g, blue: b, alpha: a)
     }
+    
+    // MARK: - UInt32
+    /// Преобразовать цвет с альфой в UInt32
+    ///
+    /// - Returns: Значение UInt32 содержащее компоненты цвета
+    public func toUInt() -> UInt32 {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let alpha = UInt32(a * 255.0) << 24
+        let red = UInt32(r * 255.0) << 16
+        let green = UInt32(g * 255.0) << 8
+        let blue = UInt32(b * 255.0) << 0
+        
+        return alpha + red + green + blue
+    }
+    
+    /// Преобразовать значение UInt32 в UIColor
+    ///
+    /// - Parameter int: Значение содержащее компоненты цвета
+    /// - Returns: UIColor с цветом представленным в виде переданного UInt32
+    public class func color(from uint: UInt32) -> UIColor {
+        let a = CGFloat((uint & 0xFF000000) >> 24) / 255.0
+        let r = CGFloat((uint & 0xFF0000) >> 16) / 255.0
+        let g = CGFloat((uint & 0xFF00) >> 8) / 255.0
+        let b = CGFloat((uint & 0xFF) >> 0) / 255.0
+        
+        return UIColor(red: r, green: g, blue: b, alpha: a)
+    }
 }
 
 // MARK: - Alpha
