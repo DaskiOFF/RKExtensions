@@ -67,13 +67,17 @@ extension UIDevice {
         case iPhone_XS_Max
         case iPhone_XS_Max_Global
         case iPhone_XR
-
+        case iPhone_11
+        case iPhone_11_Pro
+        case iPhone_11_Pro_Max
+        
         case iPod_1
         case iPod_2
         case iPod_3
         case iPod_4
         case iPod_5
         case iPod_6
+        case iPod_7
 
         case iPad
         case iPad_3G
@@ -121,6 +125,10 @@ extension UIDevice {
         case iPad_Pro_3rd_Gen_12_9_inch_1TB_WiFi
         case iPad_Pro_3rd_Gen_12_9_inch_WiFi_Cellular
         case iPad_Pro_3rd_Gen_12_9_inch_1TB_WiFi_Cellular
+        case iPad_mini_5th_Gen_WiFi
+        case iPad_mini_5th_Gen
+        case iPad_Air_3rd_Gen_WiFi
+        case iPad_Air_3rd_Gen
 
         case Apple_Watch_38mm_case
         case Apple_Watch_Series_1_38mm_case
@@ -135,9 +143,13 @@ extension UIDevice {
         case Apple_Watch_Series_4_44mm_case_GPS
         case Apple_Watch_Series_4_40mm_case_GPS_Cellular
         case Apple_Watch_Series_4_44mm_case_GPS_Cellular
+        case Apple_Watch_Series_5_40mm_case_GPS
+        case Apple_Watch_Series_5_44mm_case_GPS
+        case Apple_Watch_Series_5_40mm_case_GPS_Cellular
+        case Apple_Watch_Series_5_44mm_case_GPS_Cellular
     }
 
-    private static var deviceModelCode: String {
+    public static var deviceModelCode: String {
         if let simulatorModelIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] { return simulatorModelIdentifier }
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -183,6 +195,9 @@ extension UIDevice {
         case "iPhone11,4": return .iPhone_XS_Max
         case "iPhone11,6": return .iPhone_XS_Max_Global
         case "iPhone11,8": return .iPhone_XR
+        case "iPhone12,1": return .iPhone_11
+        case "iPhone12,3": return .iPhone_11_Pro
+        case "iPhone12,5": return .iPhone_11_Pro_Max
 
         case "iPod1,1": return .iPod_1
         case "iPod2,1": return .iPod_2
@@ -190,6 +205,7 @@ extension UIDevice {
         case "iPod4,1": return .iPod_4
         case "iPod5,1": return .iPod_5
         case "iPod7,1": return .iPod_6
+        case "iPod9,1": return .iPod_7
 
         case "iPad1,1": return .iPad
         case "iPad1,2": return .iPad_3G
@@ -239,6 +255,10 @@ extension UIDevice {
         case "iPad8,6": return .iPad_Pro_3rd_Gen_12_9_inch_1TB_WiFi
         case "iPad8,7": return .iPad_Pro_3rd_Gen_12_9_inch_WiFi_Cellular
         case "iPad8,8": return .iPad_Pro_3rd_Gen_12_9_inch_1TB_WiFi_Cellular
+        case "iPad11,1": return .iPad_mini_5th_Gen_WiFi
+        case "iPad11,2": return .iPad_mini_5th_Gen
+        case "iPad11,3": return .iPad_Air_3rd_Gen_WiFi
+        case "iPad11,4": return .iPad_Air_3rd_Gen
 
         case "Watch1,1": return .Apple_Watch_38mm_case
         case "Watch1,2": return .Apple_Watch_38mm_case
@@ -254,6 +274,10 @@ extension UIDevice {
         case "Watch4,2": return .Apple_Watch_Series_4_44mm_case_GPS
         case "Watch4,3": return .Apple_Watch_Series_4_40mm_case_GPS_Cellular
         case "Watch4,4": return .Apple_Watch_Series_4_44mm_case_GPS_Cellular
+        case "Watch5,1": return .Apple_Watch_Series_5_40mm_case_GPS
+        case "Watch5,2": return .Apple_Watch_Series_5_44mm_case_GPS
+        case "Watch5,3": return .Apple_Watch_Series_5_40mm_case_GPS_Cellular
+        case "Watch5,4": return .Apple_Watch_Series_5_44mm_case_GPS_Cellular
 
         default: return .unknown
         }
