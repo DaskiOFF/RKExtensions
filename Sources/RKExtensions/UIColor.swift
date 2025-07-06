@@ -154,6 +154,34 @@ extension UIColor {
     }
 }
 
+public extension UIColor {
+    var rgba: (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+
+        return (r, g, b, a)
+    }
+
+    var r: CGFloat {
+        return rgba.r
+    }
+
+    var g: CGFloat {
+        return rgba.g
+    }
+
+    var b: CGFloat {
+        return rgba.b
+    }
+
+    var a: CGFloat {
+        return rgba.a
+    }
+}
+
 // MARK: - Alpha
 extension UIColor {
     public func alpha(to alpha: CGFloat) -> UIColor {
